@@ -1,0 +1,17 @@
+{
+  "name": "@mxjs/a-link-picker",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@miaoxing/dev": "^6.3.4"
+  }
+}
