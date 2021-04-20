@@ -7,11 +7,16 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "jest": {
+    "preset": "jest-preset-miaoxing"
+  },
   "dependencies": {
+    "antd": "^4.15.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^6.3.4"
+    "@miaoxing/dev": "^6.3.4",
+    "@testing-library/react": "^10.0.4"
   }
 }
