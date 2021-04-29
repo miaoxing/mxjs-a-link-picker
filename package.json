@@ -18,5 +18,9 @@
   "devDependencies": {
     "@miaoxing/dev": "^6.4.0",
     "@testing-library/react": "^10.0.4"
+  },
+  "ciDependencies": {
+    "babel-preset-miaoxing": "miaoxing/babel-preset-miaoxing",
+    "@miaoxing/dev": "miaoxing/dev"
   }
 }
