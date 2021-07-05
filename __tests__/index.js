@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkPicker from '..';
 import {render} from '@testing-library/react';
 
