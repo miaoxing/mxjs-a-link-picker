@@ -1,3 +1,18 @@
+# [1.0.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v0.2.3...v1.0.0) (2022-07-01)
+
+
+### Features
+
+* 发布 1.0.0 [release 1.0.0] ([0fd28bd](https://github.com/miaoxing/mxjs-a-link-picker/commit/0fd28bd522636a5c52a0eef31e88b123f5299aae))
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.1.1` to `8.1.2`
+
 ## [0.2.3](https://github.com/miaoxing/mxjs-a-link-picker/compare/v0.2.2...v0.2.3) (2022-06-01)
 
 
