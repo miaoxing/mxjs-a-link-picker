@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.0.2...v1.1.0) (2023-01-31)
+
+
+### Features
+
+* 更新 `antd` 到 `~4.24.7` ([87325e7](https://github.com/miaoxing/mxjs-a-link-picker/commit/87325e75936701552fe3cf3b93cd831005cf77dd))
+
 ## [1.0.2](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.0.1...v1.0.2) (2023-01-01)
 
 
