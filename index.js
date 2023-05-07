@@ -18,6 +18,11 @@ const LinkPicker = ({options, value = {}, onChange}) => {
             return;
           }
 
+          // 选项未加载完
+          if (null === selectedOptions[0])  {
+            return;
+          }
+
           return labels.map((label, i) => {
             const option = selectedOptions[i];
             return (
