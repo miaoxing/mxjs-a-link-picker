@@ -1,3 +1,23 @@
+# [1.2.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.1.0...v1.2.0) (2023-05-31)
+
+
+### Bug Fixes
+
+* **a-link-picker, antd5:** `LinkPicker` 选项未加载完，`selectedOptions` 为 `[null]` 导致错误 ([251d275](https://github.com/miaoxing/mxjs-a-link-picker/commit/251d275686c17ef02c48612f86190fc2ab42aa16))
+
+
+### Features
+
+* **antd5:** 更新 `antd` 到 `5.1.6` ([6e1d03e](https://github.com/miaoxing/mxjs-a-link-picker/commit/6e1d03e11b7636374dad0956a67ea04c1af5752e))
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `8.2.0` to `8.2.1`
+
 # [1.1.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.0.2...v1.1.0) (2023-01-31)
 
 
