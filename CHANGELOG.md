@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.2.5...v1.3.0) (2024-01-31)
+
+
+### Features
+
+* 更新 `react` 支持 18 ([b40eb18](https://github.com/miaoxing/mxjs-a-link-picker/commit/b40eb188007af27396bbae9cb38588a5c37d1c64))
+
 ## [1.2.5](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.2.4...v1.2.5) (2024-01-08)
 
 
