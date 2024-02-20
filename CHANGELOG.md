@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.3.0...v1.4.0) (2024-02-20)
+
+
+### Features
+
+* 更新 antd, antd icons 版本 ([bee80ea](https://github.com/miaoxing/mxjs-a-link-picker/commit/bee80ea9078ee0a2a91595f0deea982bd3a0e7b6))
+
 # [1.3.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.2.5...v1.3.0) (2024-01-31)
 
 
