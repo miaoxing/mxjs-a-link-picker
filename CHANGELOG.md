@@ -1,3 +1,13 @@
+## [1.4.1](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.0...v1.4.1) (2024-03-31)
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `9.1.0` to `9.1.1`
+
 # [1.4.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.3.0...v1.4.0) (2024-02-20)
 
 
