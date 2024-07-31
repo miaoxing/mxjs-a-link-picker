@@ -1,3 +1,18 @@
+## [1.4.2](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.1...v1.4.2) (2024-07-31)
+
+
+### Bug Fixes
+
+* 更改入口文件，解决 vite "Failed to resolve entry for package" 问题 ([d3d61b7](https://github.com/miaoxing/mxjs-a-link-picker/commit/d3d61b7b3282685a46ce5071a0feb0c6ed34ccf8))
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `9.1.1` to `9.1.2`
+
 ## [1.4.1](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.0...v1.4.1) (2024-03-31)
 
 
