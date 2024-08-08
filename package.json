@@ -11,7 +11,7 @@
     "preset": "jest-preset-miaoxing"
   },
   "dependencies": {
-    "antd": "~5.13"
+    "antd": "~5.19"
   },
   "devDependencies": {
     "@miaoxing/dev": "^9.1.3",
