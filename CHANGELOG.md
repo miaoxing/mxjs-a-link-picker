@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.3...v1.5.0) (2024-09-01)
+
+
+### Features
+
+* 更新 `antd` 到 `~5.19` ([9ee9ded](https://github.com/miaoxing/mxjs-a-link-picker/commit/9ee9ded381f9651e778aba107d3184441687ef0e))
+
+
+
+
+
+### Dependencies
+
+* **@miaoxing/dev:** upgrade from `9.1.3` to `9.2.0`
+
 ## [1.4.3](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.2...v1.4.3) (2024-08-03)
 
 
