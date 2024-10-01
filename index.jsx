@@ -1,12 +1,40 @@
-import { useRef, useState } from 'react';
-import {Cascader} from 'antd';
+import { useMemo, useRef, useState } from 'react';
+import { Cascader } from 'antd';
 import PropTypes from 'prop-types';
 
-const LinkPicker = ({options, value = {}, onChange}) => {
+/**
+ * 遍历所有的选项，如果找到值等于 `type`，表示选中该选项
+ */
+const typeToValue = (type, options) => {
+  for (const option of options) {
+    // 第一级找到
+    if (option.value === type) {
+      return [option.value];
+    }
+    // 第二级找到
+    const child = option.children?.find(child => child.value === type);
+    if (child) {
+      return [option.value, child.value];
+    }
+  }
+}
+
+/**
+ * 只记录最后一个值为 `type`，减少要存储的内容
+ */
+const valueToType = (cascaderValue, value) => {
+  return cascaderValue.length === 0 ? {} : { ...value, type: cascaderValue[cascaderValue.length - 1] };
+};
+
+const LinkPicker = ({ options = [], value = {}, onChange }) => {
   const [customPicker, setCustomPicker] = useState();
   const customPickerRef = useRef();
 
   const [extra, setExtra] = useState({});
+
+  const cascaderValue = useMemo(() => {
+    return typeToValue(value.type, options);
+  }, [options, value.type]);
 
   return (
     <>
@@ -19,7 +47,7 @@ const LinkPicker = ({options, value = {}, onChange}) => {
           }
 
           // 选项未加载完
-          if (null === selectedOptions[0])  {
+          if (null === selectedOptions[0]) {
             return;
           }
 
@@ -36,10 +64,10 @@ const LinkPicker = ({options, value = {}, onChange}) => {
           });
         }}
         expandTrigger="hover"
-        style={{width: '100%'}}
-        value={value.options || []}
+        style={{ width: '100%' }}
+        value={cascaderValue}
         onChange={(cascaderValue, selectedOptions) => {
-          const newValue = cascaderValue.length === 0 ? {} : {...value, options: cascaderValue};
+          const newValue = valueToType(cascaderValue, value);
           const lastOption = selectedOptions[selectedOptions.length - 1];
 
           if (!lastOption || !lastOption.picker) {
@@ -54,7 +82,7 @@ const LinkPicker = ({options, value = {}, onChange}) => {
              * @param extra extra data, may be used for display, caching
              */
             addValue: (customValue, extra) => {
-              onChange({...newValue, ...customValue});
+              onChange({ ...newValue, ...customValue });
               if (typeof extra !== 'undefined') {
                 setExtra(extra);
               }
