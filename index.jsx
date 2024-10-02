@@ -22,8 +22,8 @@ const typeToValue = (type, options) => {
 /**
  * 只记录最后一个值为 `type`，减少要存储的内容
  */
-const valueToType = (cascaderValue, value) => {
-  return cascaderValue.length === 0 ? {} : { ...value, type: cascaderValue[cascaderValue.length - 1] };
+const valueToType = (cascaderValue) => {
+  return cascaderValue.length === 0 ? {} : { type: cascaderValue.at(-1) };
 };
 
 const LinkPicker = ({ options = [], value = {}, onChange }) => {
@@ -31,6 +31,9 @@ const LinkPicker = ({ options = [], value = {}, onChange }) => {
   const customPickerRef = useRef();
 
   const [extra, setExtra] = useState({});
+
+  // 在当前实例中缓存所有填过的值
+  const allValue = useRef({});
 
   const cascaderValue = useMemo(() => {
     return typeToValue(value.type, options);
@@ -67,8 +70,11 @@ const LinkPicker = ({ options = [], value = {}, onChange }) => {
         style={{ width: '100%' }}
         value={cascaderValue}
         onChange={(cascaderValue, selectedOptions) => {
-          const newValue = valueToType(cascaderValue, value);
+          const newValue = valueToType(cascaderValue);
           const lastOption = selectedOptions[selectedOptions.length - 1];
+
+          // 缓存所有值
+          allValue.current = { ...allValue.current, ...value, ...newValue };
 
           if (!lastOption || !lastOption.picker) {
             onChange(newValue);
@@ -89,7 +95,14 @@ const LinkPicker = ({ options = [], value = {}, onChange }) => {
             },
           };
 
-          setCustomPicker(<lastOption.picker pickerRef={customPickerRef} linkPicker={linkPicker} value={value}/>);
+          setCustomPicker(
+            <lastOption.picker
+              pickerRef={customPickerRef}
+              linkPicker={linkPicker}
+              // 将所有值传入自定义选择器，以便读到之前设置过的值
+              value={allValue.current}
+            />
+          );
 
           // 每次选中时都要展示自定义选择器
           customPickerRef.current && customPickerRef.current.show();
