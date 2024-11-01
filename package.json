@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/a-link-picker",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "main": "index.jsx",
   "license": "MIT",
   "publishConfig": {

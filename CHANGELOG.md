@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.5.0...v2.0.0) (2024-11-01)
+
+
+### Features
+
+* **a-link-picker:** 提交时，忽略不用的值 ([e0b24a4](https://github.com/miaoxing/mxjs-a-link-picker/commit/e0b24a494400332b503b30592efd06babcab4e19))
+* **a-link-picker:** 简化数据结构，减少存储 ([db5275b](https://github.com/miaoxing/mxjs-a-link-picker/commit/db5275bf96f46fcba8b2bcbd706a83f7d46fb3b6))
+
+
+### BREAKING CHANGES
+
+* **a-link-picker:** 简化数据结构，减少存储
+
 # [1.5.0](https://github.com/miaoxing/mxjs-a-link-picker/compare/v1.4.3...v1.5.0) (2024-09-01)
 
 
